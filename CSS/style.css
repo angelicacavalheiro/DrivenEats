@@ -4,10 +4,14 @@
 .righteous{
     font-family: 'Righteous', cursive;
 }
-.conteiner{
+body{
+    position: relative;
+}
+.conteiner{  
     width: 414px;
-    height: 1026px;
-    background-color: red;
+    height: 1026px;  
+    background-color: #E5E5E5;
+
 } 
 
 .topo{
@@ -49,4 +53,212 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;    
+}
+.almoço{
+    display: flex;
+}
+.bebida{
+    display: flex;
+}
+.doce{
+    display: flex;
+}
+.caixinha{    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.frango{
+    position: absolute;
+    width: 172px;
+    height: 216px;
+    left: 19px;
+    top: 165px;
+}
+.massa{
+    position: absolute;
+    width: 172px;
+    height: 216px;
+    left: 207px;
+    top: 165px;
+}
+
+.arroz-feijao{
+    position: absolute;
+    width: 172px;
+    height: 216px;
+    left: 395px;
+    top: 165px;
+}
+.coca{
+    position: absolute;
+    width: 172px;
+    height: 202px;
+    left: 19px;
+    top: 450px;
+}
+.fanta{
+    position: absolute;
+    width: 172px;
+    height: 202px;
+    left: 207px;
+    top: 450px;
+}
+.pepsi{
+    position: absolute;
+    width: 172px;
+    height: 202px;
+    left: 395px;
+    top: 450px;      
+}
+.pudim{
+    position: absolute;
+    width: 172px;
+    height: 197px;
+    left: 19px;
+    top: 721px;
+
+}
+.brigadeiro{
+    position: absolute;
+    width: 172px;
+    height: 197px;
+    left: 207px;
+    top: 721px;
+
+}
+.beijinho{
+    position: absolute;
+    width: 172px;
+    height: 197px;
+    left: 395px;
+    top: 721px;
+
+}
+.titulo_opcao p{
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+
+    color: #333333;
+}
+.comida{
+    position: absolute;
+    width: 250px;
+    height: 25px;
+    left: 19px;
+    top: 123px;
+}
+.refri{
+    position: absolute;
+    width: 231px;
+    height: 25px;
+    left: 19px;
+    top: 408px;
+}
+.sobremesa{
+    position: absolute;
+    width: 320px;
+    height: 25px;
+    left: 19px;
+    top: 679px;
+}
+
+.conteiner img{
+    border-radius: 4px;
+}
+
+.img_frango{
+    position: absolute;
+    width: 144px;
+    height: 87px;
+    left: 14px;
+    top: 18px;
+}
+
+.nome_produto{
+    position: absolute;
+    width: 139px;
+    height: 23px;
+    left: 15px;
+    top: 113px;
+}
+
+.nome_produto p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #333333;
+}
+
+.descrição p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #A6A6A6;    
+}
+
+.refeição{
+    position: absolute;
+    width: 147px;
+    height: 39px;
+    left: 14px;
+    top: 140px;
+}
+
+.beber{
+    position: absolute;
+    width: 147px;
+    height: 18px;
+    left: 14px;
+    top: 140px;
+}
+.adoçar{
+    position: absolute;
+    width: 147px;
+    height: 18px;
+    left: 14px;
+    top: 135px;
+}
+
+.valor  p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;    
+}
+.eat {
+    position: absolute;
+    width: 66px;
+    height: 19px;
+    left: 14px;
+    top: 184px;
+}
+
+.drink {
+    position: absolute;
+    width: 66px;
+    height: 19px;
+    left: 14px;
+    top: 167px;
+}
+.dessert{
+    position: absolute;
+    width: 66px;
+    height: 19px;
+    left: 14px;
+    top: 162px;
 }
