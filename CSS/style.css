@@ -5,21 +5,24 @@
     font-family: 'Righteous', cursive;
 }
 body{
-    position: relative;
 }
-.conteiner{  
+.conteiner{ 
     width: 414px;
     height: 1026px;  
     background-color: #E5E5E5;
 
+    overflow-x: hidden;
 } 
 
 .topo{
+    position: fixed;
     width: 414px;
     height: 92px;
 
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
 }
 
 .topo p{
@@ -54,139 +57,92 @@ body{
     font-size: 18px;
     line-height: 21px;    
 }
-.almoço{
+.conteiner_almoço{
+    
     display: flex;
+    overflow-x: scroll;   
+    
+    
 }
-.bebida{
+.conteiner_bebida{
     display: flex;
+    overflow-x: scroll;    
 }
-.doce{
+.conteiner_sobremesa{
     display: flex;
+    overflow-x: scroll;    
 }
-.caixinha{    
+
+.caixinha_almoço{    
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+
+    width: 172px;
+    height: 216px;   
+
+    margin: 17px 16px 0px 19px;
+
+    flex-shrink: 0;
 }
 
-.frango{
-    position: absolute;
-    width: 172px;
-    height: 216px;
-    left: 19px;
-    top: 165px;
-}
-.massa{
-    position: absolute;
-    width: 172px;
-    height: 216px;
-    left: 207px;
-    top: 165px;
-}
+.caixinha_bebida{    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
 
-.arroz-feijao{
-    position: absolute;
-    width: 172px;
-    height: 216px;
-    left: 395px;
-    top: 165px;
-}
-.coca{
-    position: absolute;
     width: 172px;
     height: 202px;
-    left: 19px;
-    top: 450px;
+
+    margin: 17px 16px 0 19px;
+
+    flex-shrink: 0;
 }
-.fanta{
-    position: absolute;
-    width: 172px;
-    height: 202px;
-    left: 207px;
-    top: 450px;
-}
-.pepsi{
-    position: absolute;
-    width: 172px;
-    height: 202px;
-    left: 395px;
-    top: 450px;      
-}
-.pudim{
-    position: absolute;
+
+.caixinha_sobremesa{    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
     width: 172px;
     height: 197px;
-    left: 19px;
-    top: 721px;
 
-}
-.brigadeiro{
-    position: absolute;
-    width: 172px;
-    height: 197px;
-    left: 207px;
-    top: 721px;
+    margin: 17px 16px 16px 19px;
 
+    flex-shrink: 0;
 }
-.beijinho{
-    position: absolute;
-    width: 172px;
-    height: 197px;
-    left: 395px;
-    top: 721px;
 
-}
-.titulo_opcao p{
+ .titulo_conteiner{
     font-family: Righteous;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
-    line-height: 32px;
     letter-spacing: 0.018em;
 
     color: #333333;
+
+    margin: 27px 0 0 19px;
+    
 }
-.comida{
-    position: absolute;
-    width: 250px;
-    height: 25px;
-    left: 19px;
-    top: 123px;
-}
-.refri{
-    position: absolute;
-    width: 231px;
-    height: 25px;
-    left: 19px;
-    top: 408px;
-}
-.sobremesa{
-    position: absolute;
-    width: 320px;
-    height: 25px;
-    left: 19px;
-    top: 679px;
+
+.titulo_almoço{
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 0.018em;
+
+    color: #333333;
+
+    margin: 123px 0 0 19px;
+    margin-top: 123px;    
 }
 
 .conteiner img{
     border-radius: 4px;
+    margin: 18px 14px 8px 14px;
 }
 
-.imagens{
-    position: absolute;
-    width: 144px;
-    height: 87px;
-    left: 14px;
-    top: 18px;
-}
-
-.nome_produto{
-    position: absolute;
-    width: 139px;
-    height: 23px;
-    left: 15px;
-    top: 113px;
-}
 
 .nome_produto p{
     font-family: Roboto;
@@ -196,6 +152,10 @@ body{
     line-height: 19px;
 
     color: #333333;
+    
+}
+.nome_produto{
+    margin: 0px 18px 4px 14px;
 }
 
 .descrição p{
@@ -205,31 +165,12 @@ body{
     font-size: 15px;
     line-height: 18px;
 
-    color: #A6A6A6;    
+    color: #A6A6A6;   
+}
+.descrição{
+    margin: 0px 11px 5px 14px;
 }
 
-.refeição{
-    position: absolute;
-    width: 147px;
-    height: 39px;
-    left: 14px;
-    top: 140px;
-}
-
-.beber{
-    position: absolute;
-    width: 147px;
-    height: 18px;
-    left: 14px;
-    top: 140px;
-}
-.adoçar{
-    position: absolute;
-    width: 147px;
-    height: 18px;
-    left: 14px;
-    top: 135px;
-}
 
 .valor  p{
     font-family: Roboto;
@@ -240,30 +181,12 @@ body{
     
     color: #000000;    
 }
-.eat {
-    position: absolute;
-    width: 66px;
-    height: 19px;
-    left: 14px;
-    top: 184px;
+.valor{
+    margin: 0px 92px 13px 14px;
 }
 
-.drink {
-    position: absolute;
-    width: 66px;
-    height: 19px;
-    left: 14px;
-    top: 167px;
-}
-.dessert{
-    position: absolute;
-    width: 66px;
-    height: 19px;
-    left: 14px;
-    top: 162px;
-}
 .barra-final{
-    position: absolute;
+    position: fixed;
     width: 414px;
     height: 92px;
     left: 0px;
@@ -298,4 +221,4 @@ body{
     letter-spacing: 0.018em;
 
     color: #FFFFFF;
-}
+} */
