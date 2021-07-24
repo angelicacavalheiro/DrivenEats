@@ -31,46 +31,46 @@
 
             <div class = "titulo_almoço righteous"> <p>Primeiro, seu prato</p> </div> 
             <div class="conteiner_almoço">                               
-                <div class="caixinha_almoço">
+                <div class="caixinha_almoço" onclick="selecionarAlmoço(this)">
                     <img src="assets/frango.png" alt="Figura Almoço" class="imagens">
                     <p class="nome_produto roboto">Frango Yin Yang</p>
                     <p class="descrição refeição roboto">Um pouco de batata, um pouco de salada</p>
                     <p class="valor roboto">R$ 14,90</p>
                 </div>
                 
-                <div class="caixinha_almoço">
+                <div class="caixinha_almoço" onclick="selecionarAlmoço(this)">
                     <img src="assets/frango.png" alt="Figura Almoço" class="imagens">
                     <p class="nome_produto roboto">Frango Yin Yang</p>
                     <p class="descrição refeição roboto">Um pouco de batata, um pouco de salada</p>
-                    <p class="valor eat roboto">R$ 14,90</p>
+                    <p class="valor roboto">R$ 14,90</p>
                 </div>
 
-                <div class="caixinha_almoço">
+                <div class="caixinha_almoço" onclick="selecionarAlmoço(this)">
                     <img src="assets/frango.png" alt="Figura Almoço" class="imagens">
                     <p class="nome_produto roboto">Frango Yin Yang</p>
                     <p class="descrição refeição roboto">Um pouco de batata, um pouco de salada</p>
-                    <p class="valor eat roboto">R$ 14,90</p>
+                    <p class="valor roboto">R$ 14,90</p>
                 </div>
 
             </div>
             
             <div class = "titulo_conteiner righteous"> <p>Agora, sua bebida</p> </div>
             <div class="conteiner_bebida">
-                <div class="caixinha_bebida">
+                <div class="caixinha_bebida" onclick="selecionarBebida(this)">
                     <img src="assets/coca.png" alt="Figura bebidas" class="imagens">
                     <p class="nome_produto roboto">Coquinha gelada</p>
                     <p class="descrição beber roboto">Lata 350ml</p>
                     <p class="valor drink roboto">R$ 4,90</p>
                 </div>
                 
-                <div class="caixinha_bebida">
+                <div class="caixinha_bebida" onclick="selecionarBebida(this)">
                     <img src="assets/coca.png" alt="Figura bebidas" class="imagens">
                     <p class="nome_produto roboto">Coquinha gelada</p>
                     <p class="descrição beber roboto">Lata 350ml</p>
                     <p class="valor drink roboto">R$ 4,90</p>
                 </div>
 
-                <div class="caixinha_bebida">
+                <div class="caixinha_bebida" onclick="selecionarBebida(this)">
                     <img src="assets/coca.png" alt="Figura bebidas" class="imagens">
                     <p class="nome_produto roboto">Coquinha gelada</p>
                     <p class="descrição beber roboto">Lata 350ml</p>
@@ -81,35 +81,37 @@
             <div class = "titulo_conteiner righteous"> <p>Por fim, sua sobremesa</p> </div>
             <div class="conteiner_sobremesa">
                
-                <div class="caixinha_sobremesa">
+                <div class="caixinha_sobremesa" onclick="selecionarSobremesa(this)">
                     <img src="assets/pudim.png" alt="Figura pudim" class="imagens">
                     <p class="nome_produto roboto">Pudim</p>
                     <p class="descrição adoçar roboto">Apenas pudim</p>
                     <p class="valor dessert roboto">R$ 7,90</p>
                 </div>
 
-                <div class="caixinha_sobremesa">
+                <div class="caixinha_sobremesa" onclick="selecionarSobremesa(this)">
                     <img src="assets/pudim.png" alt="Figura pudim" class="imagens">
                     <p class="nome_produto roboto">Pudim</p>
                     <p class="descrição adoçar roboto">Apenas pudim</p>
                     <p class="valor dessert roboto">R$ 7,90</p>
                 </div>
 
-                <div class="caixinha_sobremesa">
+                <div class="caixinha_sobremesa" onclick="selecionarSobremesa(this)">
                     <img src="assets/pudim.png" alt="Figura pudim" class="imagens">
                     <p class="nome_produto roboto">Pudim</p>
-                    <p class="descrição adoçar">Apenas pudim</p>
+                    <p class="descrição adoçar roboto">Apenas pudim</p>
                     <p class="valor dessert roboto">R$ 7,90</p>
                 </div>          
             </div> 
 
             <div class="barra-final">
-                <bottom class="primeiro-botão"> 
+                <bottom class="primeiro-botão começar" onclick="fechar_pedido()"> 
                     <p>Selecione os 3 itens <br> para fechar o pedido</p>
                 </bottom>   
             </div>
 
         </div>    
+
+        <script src="scripts.js"></script>
 
     </body>
 

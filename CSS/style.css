@@ -4,6 +4,7 @@
 .righteous{
     font-family: 'Righteous', cursive;
 }
+
 body{
 }
 .conteiner{ 
@@ -96,6 +97,10 @@ body{
     flex-shrink: 0;
 }
 
+.selecionar{
+    box-shadow: inset 0px 0px 0px 5px #32B72F;
+} 
+
  .titulo_conteiner{
     font-family: Righteous;
     font-size: 26px;
@@ -175,7 +180,6 @@ body{
     left: 25px;
     bottom: 16px;
 
-    background: #CBCBCB;
     border-radius: 50px;
 
     font-family: Roboto;
@@ -186,12 +190,12 @@ body{
     color: #FFFFFF;
         
 }
+.começar{
+    background: #CBCBCB;
+}
+.finalizar{
+    background: #32B72F;
+}
 .primeiro-botão p{
     margin: 8px auto auto auto;
-
-    font-family: Roboto;
-    font-size: 20px;
-    letter-spacing: 0.018em;
-
-    color: #FFFFFF; 
 }
