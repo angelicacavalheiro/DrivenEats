@@ -14,21 +14,23 @@ function fechar_pedido(){
     }
 }
 function enviar_pedido(){
+    let valor = (parseFloat(valor_comida) + parseFloat(valor_bebida) + parseFloat(valor_sobremesa));
+    let valor_arredondado = valor.toFixed(2)
     
     const mensagem = encodeURIComponent(`Olá, gostaria de fazer o pedido:
     - Prato: ${prato} 
     - Bebida: ${bebida}
     - Sobremesa: ${sobremesa}
-    - Valor: ${valor}`);
+    - Total R$: ${ valor_arredondado}`);
     window.location.href = `https://wa.me/5511977505769?text=${mensagem}`;
 
 }
-
-
 let prato;
 let bebida;
 let sobremesa;
-let valor = (valor_comida + valor_bebida + valor_sobremesa);
+let valor_comida = 0;
+let valor_bebida = 0;
+let valor_sobremesa = 0;
 
 function selecionarAlmoço(tipoPrato){
     //dermarcar 
@@ -47,12 +49,11 @@ function selecionarAlmoço(tipoPrato){
 
     prato = nomeComida.innerText;
 
-    //passando String para Number
+    //retirando caracteres
     let stringComidaR$ = stringComida.innerText;
     let removerR$ = stringComidaR$.replace('R$', '');
     let valor_comida = removerR$.replace(',', '.');
 
-    return(valor_comida)
 }
 
 
@@ -72,14 +73,13 @@ function selecionarBebida(tipoBebida){
 
     bebida = nomeBebida.innerText;
 
-    //passando String para Number
+    //retirando caracteres
     let stringBebidaR$ = stringBebida.innerText;
     let removerR$ = stringBebidaR$.replace('R$', '');
-    let valor_bebida = removerR$.replace(',', '.');
-
-    return(valor_bebida)
-    
+    let valorbebida = removerR$.replace(',', '.');
+    valor_bebida = removerR$.replace(',', '.');
 } 
+
 function selecionarSobremesa(tipoSobremesa){
     //dermarcar 
     const botaoMarcado = document.querySelector(".conteiner_sobremesa >.selecionar")
@@ -97,10 +97,8 @@ function selecionarSobremesa(tipoSobremesa){
 
     sobremesa = nomeSobremesa.innerText;
 
-    //passando String para Number
+    //retirando caracteres
     let stringSobremesaR$ = stringSobremesa.innerText;
     let removerR$ = stringSobremesaR$.replace('R$', '');
     let valor_sobremesa = removerR$.replace(',', '.');
-
-    return(valor_sobremesa)
 } 
