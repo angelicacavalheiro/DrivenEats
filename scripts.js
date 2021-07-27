@@ -14,14 +14,13 @@ function fechar_pedido(){
     }
 }
 function enviar_pedido(){
-    let valor = (parseFloat(valor_comida) + parseFloat(valor_bebida) + parseFloat(valor_sobremesa));
-    let valor_arredondado = valor.toFixed(2)
+    let valor_arredondado = valor_total.toFixed(2)
     
     const mensagem = encodeURIComponent(`Olá, gostaria de fazer o pedido:
     - Prato: ${prato} 
     - Bebida: ${bebida}
     - Sobremesa: ${sobremesa}
-    - Total R$: ${ valor_arredondado}`);
+    - Total R$: ${valor_arredondado}`);
     window.location.href = `https://wa.me/5511977505769?text=${mensagem}`;
 
 }
@@ -31,11 +30,11 @@ let sobremesa;
 let valor_comida = 0;
 let valor_bebida = 0;
 let valor_sobremesa = 0;
+let valor_total = 0;
 
-function selecionarAlmoço(tipoPrato){
+function selecionarAlmoço(tipoPrato, nomeComida, preco){
     //dermarcar 
     const botaoMarcado = document.querySelector(".conteiner_almoço > .selecionar") //localiza se tem selecionar no conteiner
-    const nomeComida = document.querySelector(".nome_comida")
     const stringComida = document.querySelector(".valor_comida")
 
     if (botaoMarcado !== null){ //se está selecionado, botao marcado n é nulo
@@ -47,20 +46,15 @@ function selecionarAlmoço(tipoPrato){
 	tipoPrato.classList.add("selecionar"); 
     tipoPrato.classList.remove("escondido"); //remover escondido = aparecer check
 
-    prato = nomeComida.innerText;
+    prato = nomeComida;
 
-    //retirando caracteres
-    let stringComidaR$ = stringComida.innerText;
-    let removerR$ = stringComidaR$.replace('R$', '');
-    let valor_comida = removerR$.replace(',', '.');
+    valor_total = valor_total + preco
 
 }
 
-
-function selecionarBebida(tipoBebida){
+function selecionarBebida(tipoBebida, nomeBebida, preco){
     //dermarcar 
     const botaoMarcado = document.querySelector(".conteiner_bebida >.selecionar")
-    const nomeBebida = document.querySelector(".nome_bebida")
     const stringBebida = document.querySelector(".valor_bebida")
 
     if (botaoMarcado !== null){
@@ -71,19 +65,14 @@ function selecionarBebida(tipoBebida){
 	tipoBebida.classList.add("selecionar");
     tipoBebida.classList.remove("escondido");
 
-    bebida = nomeBebida.innerText;
+    bebida = nomeBebida;
 
-    //retirando caracteres
-    let stringBebidaR$ = stringBebida.innerText;
-    let removerR$ = stringBebidaR$.replace('R$', '');
-    let valorbebida = removerR$.replace(',', '.');
-    valor_bebida = removerR$.replace(',', '.');
+    valor_total = valor_total + preco
 } 
 
-function selecionarSobremesa(tipoSobremesa){
+function selecionarSobremesa(tipoSobremesa, nomeSobremesa, preco){
     //dermarcar 
     const botaoMarcado = document.querySelector(".conteiner_sobremesa >.selecionar")
-    const nomeSobremesa = document.querySelector(".nome_sobremesa")
     const stringSobremesa = document.querySelector(".valor_sobremesa")
 
 
@@ -95,10 +84,7 @@ function selecionarSobremesa(tipoSobremesa){
 	tipoSobremesa.classList.add("selecionar");
     tipoSobremesa.classList.remove("escondido");
 
-    sobremesa = nomeSobremesa.innerText;
+    sobremesa = nomeSobremesa;
 
-    //retirando caracteres
-    let stringSobremesaR$ = stringSobremesa.innerText;
-    let removerR$ = stringSobremesaR$.replace('R$', '');
-    let valor_sobremesa = removerR$.replace(',', '.');
+    valor_total = valor_total + preco
 } 
