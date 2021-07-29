@@ -32,7 +32,7 @@
 
             <div class = "titulo_almoço righteous"> <p>Primeiro, seu prato</p> </div> 
             <div class="conteiner_almoço">                               
-                <div class="caixinha_almoço escondido" onclick="selecionarAlmoço(this, 'Frango Yin Yang', 14.90)">
+                <div class="caixinha_almoço escondido" onclick="selecionarAlmoço(this)">
                     <img src="assets/frango.png" alt="Figura Almoço" class="imagens">
                     <p class="nome_comida roboto">Frango Yin Yang</p>
                     <p class="descrição refeição roboto">Um pouco de batata, um pouco de salada</p>
@@ -40,7 +40,7 @@
                     <ion-icon name="checkmark-circle" class="icone verde"></ion-icon>
                 </div>
                 
-                <div class="caixinha_almoço escondido" onclick="selecionarAlmoço(this, 'Macarrão', 15.90)">
+                <div class="caixinha_almoço escondido" onclick="selecionarAlmoço(this)">
                     <img src="assets/macarrao.jpg" alt="Figura Almoço" class="imagens">
                     <p class="nome_comida roboto">Macarrão</p>
                     <p class="descrição refeição roboto">Macarrão soltinho, com molho</p>
@@ -48,7 +48,7 @@
                     <ion-icon name="checkmark-circle" class="icone verde"></ion-icon>
                 </div>
 
-                <div class="caixinha_almoço escondido" onclick="selecionarAlmoço(this, 'Arroz e Feijão', 13.90)">
+                <div class="caixinha_almoço escondido" onclick="selecionarAlmoço(this)">
                     <img src="assets/arroz.jpg" alt="Figura Almoço" class="imagens">
                     <p class="nome_comida roboto">Arroz e Feijão</p>
                     <p class="descrição refeição roboto">Um pouco de arroz, um pouco de feijão</p>
@@ -60,7 +60,7 @@
             
             <div class = "titulo_bebida righteous"> <p>Agora, sua bebida</p> </div>
             <div class="conteiner_bebida">
-                <div class="caixinha_bebida escondido" onclick="selecionarBebida(this, 'Coquinha gelada', 4.90)">
+                <div class="caixinha_bebida escondido" onclick="selecionarBebida(this)">
                     <img src="assets/coca.png" alt="Figura bebidas" class="imagens">
                     <p class="nome_bebida roboto">Coquinha gelada</p>
                     <p class="descrição beber roboto">Lata 350ml</p>
@@ -68,7 +68,7 @@
                     <ion-icon name="checkmark-circle" class="icone verde"></ion-icon>
                 </div>
                 
-                <div class="caixinha_bebida escondido" onclick="selecionarBebida(this, 'Pepsi gelada', 4.50)">
+                <div class="caixinha_bebida escondido" onclick="selecionarBebida(this)">
                     <img src="assets/pepsi.jpg" alt="Figura bebidas" class="imagens">
                     <p class="nome_bebida roboto">Pepsi gelada</p>
                     <p class="descrição beber roboto">Lata 350ml</p>
@@ -76,7 +76,7 @@
                     <ion-icon name="checkmark-circle" class="icone verde"></ion-icon>
                 </div>
 
-                <div class="caixinha_bebida escondido" onclick="selecionarBebida(this, 'Fanta gelada', 4.50)">
+                <div class="caixinha_bebida escondido" onclick="selecionarBebida(this)">
                     <img src="assets/fanta.jpg" alt="Figura bebidas" class="imagens">
                     <p class="nome_bebida roboto">Fanta gelada</p>
                     <p class="descrição beber roboto">Lata 350ml</p>
@@ -88,7 +88,7 @@
             <div class = "titulo_sobremesa righteous"> <p>Por fim, sua sobremesa</p> </div>
             <div class="conteiner_sobremesa">
                
-                <div class="caixinha_sobremesa escondido" onclick="selecionarSobremesa(this, 'Pudim', 7.90)">
+                <div class="caixinha_sobremesa escondido" onclick="selecionarSobremesa(this)">
                     <img src="assets/pudim.png" alt="Figura pudim" class="imagens">
                     <p class="nome_sobremesa roboto">Pudim</p>
                     <p class="descrição adoçar roboto">Delicioso pudim</p>
@@ -96,7 +96,7 @@
                     <ion-icon name="checkmark-circle" class="icone verde"></ion-icon>
                 </div>
 
-                <div class="caixinha_sobremesa escondido" onclick="selecionarSobremesa(this, 'Tiramisu', 10.90)">
+                <div class="caixinha_sobremesa escondido" onclick="selecionarSobremesa(this)">
                     <img src="assets/tiramisu.jpg" alt="Figura pudim" class="imagens">
                     <p class="nome_sobremesa roboto">Tiramisu</p>
                     <p class="descrição adoçar roboto">Incrível Tiramisu</p>
@@ -104,7 +104,7 @@
                     <ion-icon name="checkmark-circle" class="icone verde"></ion-icon>
                 </div>
 
-                <div class="caixinha_sobremesa escondido" onclick="selecionarSobremesa(this, 'Mousse', 5.90)">
+                <div class="caixinha_sobremesa escondido" onclick="selecionarSobremesa(this)">
                     <img src="assets/morango.jpg" alt="Figura pudim" class="imagens">
                     <p class="nome_sobremesa roboto">Mousse</p>
                     <p class="descrição adoçar roboto">Mousse de morango</p>
@@ -114,7 +114,7 @@
             </div> 
 
             <div class="barra-final">
-                <bottom class="primeiro-botão começar esconder-link " onclick="enviar_pedido()"> 
+                <bottom class="primeiro-botão começar esconder-link " onclick="enviar_pedido(this)"> 
                     <p class="frase1">Selecione os 3 itens <br> para fechar o pedido</p>
                     <a class="frase2"> Fechar pedido </a>
                 </bottom>   
